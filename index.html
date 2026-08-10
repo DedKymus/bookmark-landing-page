@@ -12,29 +12,41 @@
 
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>BOOKMARK</h1>
-            <nav>
-                <a class="nav-link">Features</a>
-                <a class="nav-link">Pricing</a>
-                <a class="nav-link">Contact</a>
-                <button class="login-btn">Login</button>
-            </nav>
-        </div>
-
+    <header class="container">
+        <a href="#" class="logo-link">
+            <img src="./images/logo-bookmark.svg" alt="Bookmark Logo">
+        </a>
+        <nav id="page-section">
+            <a class="nav-link">Features</a>
+            <a class="nav-link">Pricing</a>
+            <a class="nav-link">Contact</a>
+            <button class="btn login-btn">Login</button>
+        </nav>
     </header>
 
-    <main>
+    <main class="container">
         <section class="hero">
-            <div class="container">
-                <h2>A Simple Bookmark Manager</h2>
-                <p>  A clean and simple interface to organize your favourite websites. Open a new
+            <div class="hero-content">
+                <h1>A Simple Bookmark Manager</h1>
+                <p class="text hero-text"> A clean and simple interface to organize your favourite websites. Open a new
                     browser tab and see your sites load instantly. Try it for free.</p>
+                <ul class="hero-btn-list">
+                    <li><button class="btn hero-btn" id="chrome-btn">Get it on Chrome</button></li>
+                    <li><button class="btn hero-btn" id="firefox">Get it on Firefox</button></li>
+                </ul>
             </div>
+
+            <div class="hero-image-wrapper">
+                <img src="./images/illustration-hero.svg" alt="Hero Illustration" class="hero-image">
+            </div>
+
         </section>
 
-
+        <section class="features">
+            <h2>Features</h2>
+            <p>Our aim is to make it quick and easy for you to access your favourite websites.
+                Your bookmarks sync between your devices so you can access them on the go.</p>
+        </section>
     </main>
 
 
