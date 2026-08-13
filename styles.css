@@ -74,10 +74,13 @@ header {
 /*hero*/
 .hero {
     margin-top: 10vh;
-    display: flex ;
-    text-align: center;
+}
 
+.hero .container {
+    display: flex;
+    text-align: center;
     gap: 50px;
+    align-items: center;
 }
 
 .hero-content{
@@ -163,7 +166,10 @@ header {
 
 .features {
     margin-top: 10vh;
-    display: flex ;
+}
+
+.features .container {
+    display: flex;
     text-align: center;
     flex-direction: column;
     align-items: center;
@@ -288,9 +294,12 @@ header {
 
 /*download*/
 
-.download{
+.download {
     margin-top: 30vh;
-    display: flex ;
+}
+
+.download .container {
+    display: flex;
     text-align: center;
     flex-direction: column;
     align-items: center;
@@ -373,9 +382,12 @@ header {
 /*faq*/
 
 .faq {
+    margin-top: 140px;
+}
+
+.faq .container {
     display: flex;
     flex-direction: column;
-    margin-top: 140px;
     align-items: center;
     justify-content: center;
 }
@@ -430,7 +442,7 @@ header {
 .faq-btn {
     align-self: flex-start;
     display: block;
-    margin: 40px auto 0;
+    margin: 30px auto 0;
 
     background: var(--blue-600);
     border: inherit;
@@ -451,15 +463,181 @@ header {
     border-color: var(--blue-600);
 }
 
+/*contact*/
+
+.contact {
+    background-color: var(--blue-600);
+    width: 100vw;
+    margin-top: 150px;
+}
+
+.contact .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+}
+
+.contact-text {
+    margin-top: 50px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.contact-subtitle {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.7em;
+}
+
+.contact-title {
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.contact-form {
+    margin:40px 0 70px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 300px;
+}
+
+.contact-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 40px 14px 20px;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.error-icon,
+.error-text {
+    display: none;
+}
+
+.input-wrapper.error .contact-input {
+    border: 2px solid var(--red-400);
+    border-radius: 6px 6px 0 0;
+}
+
+.input-wrapper.error .error-icon {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-wrapper.error .error-text {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--red-400);
+    color: white;
+    font-size: 12px;
+    font-style: italic;
+    padding: 6px 12px;
+    border-radius: 0 0 6px 6px;
+    text-align: left;
+}
+
+
+.contact-btn {
+    height: 3rem;
+   padding: 0 24px;
+    background-color: var(--red-400);
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.contact-btn:hover {
+    background-color: white;
+    color: var(--red-400);
+    border-color: var(--red-400);
+}
 
 /*FOOTER*/
 
-.attribution {
-    font-size: 0.6875rem;
-    text-align: center;
-    padding: 20px 0;
-}
-.attribution a {
-    color: var(--blue-600);
+.site-footer {
+    background-color: var(--blue-950);
+    padding: 40px 0 20px 0;
 }
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-nav-link {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+.footer-nav-link:hover {
+    color: var(--red-400);
+}
+
+.footer-right {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.footer-logo {
+    
+}
+
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 20px;
+    color: grey;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.attribution a {
+    color: white;
+    text-decoration: none;
+}
+.attribution a:hover {
+    color: var(--red-400);
+}
