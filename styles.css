@@ -13,6 +13,7 @@ body {
     font-size: 18px;
     color: var(--blue-950);
     background-color: white;
+    overflow-x: hidden;
 }
 
 .container {
@@ -21,6 +22,8 @@ body {
     padding: 0 24px;
 }
 
+
+
 /*HEADER*/
 
 header {
@@ -28,6 +31,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-size: 14px;
 }
 
 #page-section {
@@ -36,7 +40,14 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     gap:3rem;
+
     padding:3rem 0;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    color: var(--red-400);
 }
 
 .login-btn {
@@ -45,11 +56,17 @@ header {
     width: 7rem;
     border-radius: 6px;
     background:var(--red-400);
-    border: 0 solid #ffff;
+    border: 3px solid var(--red-400);
     color: white;
+    text-transform: uppercase;
     font-size: inherit;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-btn:hover {
+    color: var(--red-400);
+    background: var(--grey-50);
 }
 
 /*MAIN*/
@@ -59,6 +76,7 @@ header {
     margin-top: 10vh;
     display: flex ;
     text-align: center;
+
     gap: 50px;
 }
 
@@ -90,8 +108,8 @@ header {
 }
 
 .hero-image {
-    max-width: 100%;
-    height: auto;
+    width: auto;
+    max-height:100%;
     position: relative;
     z-index: 2;
 }
@@ -111,9 +129,9 @@ header {
     margin-top: 32px;
     height: 3rem;
     width: 10rem;
-
+    text-transform: uppercase;
+    border: 3px solid transparent;
     border-radius: 6px;
-    border: 2px solid transparent;
 
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -122,12 +140,154 @@ header {
 #chrome-btn {
     background: var(--blue-600);
     color: var(--grey-50);
+    border: 3px solid var(--blue-600);
 }
 
-#firefox {
+#chrome-btn:hover {
+    background: var(--grey-50);
+    color: var(--blue-600);
+}
+
+
+
+#firefox-btn {
     background-color: var(--grey-50);
     color: var(--blue-950);
 }
+
+#firefox-btn:hover{
+    border: 3px solid var(--blue-950);
+}
+
+/*features*/
+
+.features {
+    margin-top: 10vh;
+    display: flex ;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#features-text {
+    max-width: 30vw;
+    color: grey;
+}
+
+.tabs-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    height: 3rem;
+    margin: 40px 0 60px;
+    gap: 40px;
+
+    border-bottom: 3px solid var(--grey-50);
+}
+
+.tab-item {
+    width: 15vw ;
+    color: grey;
+    justify-content: center;
+    cursor: pointer ;
+}
+
+.tab-item.active {
+    color: var(--blue-950);
+    border-bottom: 3px solid var(--red-400);
+}
+
+.tab-item:hover {
+    color: var(--red-400);
+}
+
+.features-tab.hidden {
+    display: none;
+}
+
+.features-tab {
+    display: flex ;
+    align-items: center;
+    gap: 60px;
+}
+
+.tab-image-wrapper,
+.tab-info {
+    flex: 1;
+}
+
+.tab-image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    z-index: 2;
+    position: relative;
+}
+
+.tab-image-wrapper {
+    position: relative;
+}
+
+.tab-image-wrapper::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+
+    width: 150%;
+    height: 80%;
+    bottom: -15%;
+    right: 20%;
+
+    border-radius: 0 150px 150px 0;
+    background-color: var(--blue-600);
+}
+
+.tab-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.tab-info h3{
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--blue-950);
+    margin-bottom: 20px;
+}
+
+.article-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: grey;
+    margin-bottom: 30px;
+}
+
+.article-btn {
+    align-self: flex-start;
+
+    background: var(--blue-600);
+    border: inherit;
+    border-radius: 6px;
+    height: 3rem;
+    width: 7rem;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 3px solid var(--blue-600);
+}
+
+.article-btn:active {
+    background: white;
+    color: var(--blue-600);
+    transition: none;
+}
+
+
+
 
 
 /*FOOTER*/
