@@ -279,17 +279,17 @@ header {
     height: 3rem;
     width: 7rem;
     color: white;
-    font-weight: 700;
+    font-weight: 600;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     border: 3px solid var(--blue-600);
 }
 
-.article-btn:active {
+.article-btn:hover {
     background: white;
     color: var(--blue-600);
-    transition: none;
+    transition:  all 0.3s ease;;
 }
 
 /*download*/
@@ -358,7 +358,7 @@ header {
 
     background-color: var(--blue-600);
     color: white;
-    border: 2px solid transparent;
+    border: 3px solid transparent;
     border-radius: 6px;
     font-weight: 500;
     cursor: pointer;
@@ -425,6 +425,11 @@ header {
     color: var(--blue-950);
 }
 
+.faq-question:hover{
+    color: var(--red-400);
+    transition: 0.3s ease all;
+}
+
 .faq-question::-webkit-details-marker {
     display: none;
 }
@@ -461,6 +466,21 @@ header {
     background: white;
     color: var(--blue-600);
     border-color: var(--blue-600);
+}
+
+.arrow-icon {
+    display: inline-block;
+    width: 18px;
+    height: 12px;
+    background-color: var(--blue-600);
+    -webkit-mask-image: url('./images/icon-arrow.svg');
+    mask-image: url('./images/icon-arrow.svg');
+    transition: all 0.3s ease;
+}
+
+details[open] .arrow-icon {
+    background-color: var(--red-400);
+    transform: rotate(180deg);
 }
 
 /*contact*/
