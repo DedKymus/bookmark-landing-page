@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -15,12 +16,35 @@
         <a href="#" class="logo-link">
             <img src="./images/logo-bookmark.svg" alt="Bookmark Logo">
         </a>
+
+        <img id="menu-open" src="./images/icon-hamburger.svg" alt="Open menu" style="cursor: pointer;">
+
         <nav id="page-section">
-            <a class="nav-link">Features</a>
+            <a href="#features" class="nav-link">Features</a>
             <a class="nav-link">Pricing</a>
-            <a class="nav-link">Contact</a>
+            <a href="#contact" class="nav-link">Contact</a>
             <button class="btn login-btn">Login</button>
         </nav>
+
+        <div class="hidden" id="mobile-menu">
+            <div class="mobile-menu-top">
+                <img src="./images/logo-bookmark-footer.svg" alt="Bookmark Logo">
+                <img id="menu-close" src="./images/icon-close.svg" alt="Close menu" style="cursor: pointer;">
+            </div>
+
+            <nav class="mobile-menu-links">
+                <a href="#features">FEATURES</a>
+                <a href="#pricing">PRICING</a>
+                <a href="#contact">CONTACT</a>
+                <button class="mobile-login-btn">LOGIN</button>
+            </nav>
+
+            <div class="mobile-menu-socials">
+                <a href="#"><img src="./images/icon-facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="./images/icon-twitter.svg" alt="Twitter"></a>
+            </div>
+
+        </div>
     </header>
 
     <main>
@@ -48,7 +72,7 @@
             </div>
         </section>
 
-        <section class="features">
+        <section class="features" id="features">
             <div class="container">
                 <h2>Features</h2>
                 <p id="features-text">Our aim is to make it quick and easy for you to access your favourite websites.
@@ -227,7 +251,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="container">
                 <div class="contact-text">
                     <p class="contact-subtitle">35,000+ already joined</p>
@@ -255,15 +279,15 @@
                     <img src="./images/logo-bookmark-footer.svg" alt="Bookmark Logo" class="logo-blue">
                 </a>
                 <nav class="footer-nav">
-                    <a href="#" class="footer-nav-link">Features</a>
-                    <a href="#" class="footer-nav-link">Pricing</a>
-                    <a href="#" class="footer-nav-link">Contact</a>
+                    <a class="footer-nav-link">Features</a>
+                    <a class="footer-nav-link">Pricing</a>
+                    <a class="footer-nav-link">Contact</a>
                 </nav>
             </div>
             
             <div class="footer-right">
-                <a href="#" class="social-link"><img src="./images/icon-facebook.svg" alt="Facebook"></a>
-                <a href="#" class="social-link"><img src="./images/icon-twitter.svg" alt="Twitter"></a>
+                <a  class="social-link"><img src="./images/icon-facebook.svg" alt="Facebook"></a>
+                <a  class="social-link"><img src="./images/icon-twitter.svg" alt="Twitter"></a>
             </div>
         </div>
 

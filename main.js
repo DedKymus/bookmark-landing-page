@@ -32,5 +32,24 @@ document.addEventListener('DOMContentLoaded' , () => {
             inputWrapper.classList.remove('error');
         });
     }
+
+    const btnOpen = document.getElementById('menu-open');
+    const btnClose = document.getElementById('menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if(btnOpen && btnClose && mobileMenu){
+        btnOpen.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+        btnClose.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    }
 })
 
