@@ -27,9 +27,3 @@ Users should be able to:
 - Flexbox
 - Vanilla JavaScript for DOM manipulation
 
-### What I learned & Features implemented
-
-- **Custom SVG Masking**: Used `mask-image` to change the color of complex SVG icons (like the accordion arrows) directly via CSS background colors, keeping the HTML clean from inline SVGs.
-- **Smooth Animations**: Added custom CSS keyframes and smooth transitions for all interactive elements, error states, and mobile menus.
-- **Form Validation**: Implemented custom JS email validation with a dynamic error state that gracefully pushes the layout down when triggered, without breaking the document flow on mobile.
-- **Fully Responsive**: Built a fluid layout that scales perfectly from large monitors down to small smartphone screens using media queries.
