@@ -78,6 +78,7 @@ header {
     font-size: inherit;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .login-btn:hover {
@@ -766,6 +767,12 @@ details[open] .arrow-icon {
     font-weight: 500;
     letter-spacing: 2px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mobile-login-btn:hover {
+    background: white;
+    color: var(--blue-950);
 }
 
 .mobile-menu-socials {
