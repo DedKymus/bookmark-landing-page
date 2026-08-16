@@ -18,8 +18,6 @@ Users should be able to:
 
 ![img](./images/desktop-preview.png)
 
-## My process
-
 ### Built with
 
 - Semantic HTML5 markup
